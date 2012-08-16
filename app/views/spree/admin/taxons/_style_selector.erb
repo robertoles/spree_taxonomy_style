@@ -1,0 +1,5 @@
+<%= f.field_container :style do %>
+  <%= f.label :style, t(:style) %><br />
+  <%= error_message_on :taxonomy, :style, :class => 'fullwidth title' %>
+  <%= f.select :style, Spree::Taxon.styles_dropdown %>
+<% end %>
